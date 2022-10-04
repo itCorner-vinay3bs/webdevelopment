@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 29 Sep 2022</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(purple 0%, red 90%),
+                linear-gradient(to right, purple 0%, yellow 90%),
+                url("assets/images/roadside.jpg");
+            /* Change image according to your requirement*/
+            background-blend-mode: multiply, color;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            margin: 0 auto;
+            text-align: center;
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .child-box {
+            margin: 0px auto;
+            padding: 20px;
+            /* height: 400px; */
+            width: 40%;
+            background: rgba(0, 0, 0, 0.5);
+            border: 10px solid rgba(255, 0, 179, 0.315);
+            border-radius: 30px;
+            letter-spacing: 1px;
+        }
+
+        .child-box h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3.5em;
+            color: #fec201;
+            border-bottom: 1px dashed #fec;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px #000, 4px 4px 3px #000;
+        }
+
+        .child-box p {
+            font-size: 1.2em;
+            color: #fec;
+            margin-bottom: 10px;
+            line-height: 1.3;
+            text-align: justify;
+        }
+
+        p.quoteContent {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 1.3em;
+            line-height: 1.6em;
+            text-align: center;
+            color: rgba(255, 230, 250, 0.6)
+                /* width: 75%; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child-box">
+            <h1>You</h1>
+            <p class="quoteContent">"You are whatever a moon has always meant and whatever a sun will always sing"</p>
+
+            <p>Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me alive.</p>
+            <p>
+                I choose you. And I’ll choose you over and over and over. Without pause, without a doubt, in a
+                heartbeat. I’ll keep choosing you.
+            </p>
+        </div>
+        <div class="child-box">
+            <h1>Me</h1>
+            <p class="quoteContent">"Follow your inner moonlight; don’t hide the madness"</p>
+            <p>
+                Being real is what keeps me humble. It doesn't matter how much money I make or how much I accomplish.
+                What's critical is
+                staying real to myself and keeping my feet on the ground. That's what helps keep me going.
+            </p>
+            <p>I wish I could turn back the clock. I’d find you sooner and love you longer.</p>
+        </div>
+    </div>
+</body>
+
+</html>

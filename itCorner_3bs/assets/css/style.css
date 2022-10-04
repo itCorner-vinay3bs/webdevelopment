@@ -1,0 +1,113 @@
+/* " * " is universal/every HTML element or all element selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(24, 21, 49);
+}
+
+/* class Selector - classname is denoted by "dot" like = ".yourClassName" */
+.container {
+  margin: 10px auto;
+  width: 80%;
+  border: 1px solid transparent;
+  text-align: center;
+  /* font-size: 16px; */
+}
+
+/* Common box layout CSS rule */
+.box {
+  margin: 5px;
+  padding: 20px;
+  border: 2px solid purple;
+  height: 150px;
+  display: inline-block;
+  font-size: 1.2em;
+  /* transform: none;
+  transition: all 0.5s ease-out; */
+}
+/* .box:hover {
+  transform: scale(0.9);
+  cursor: zoom-out;
+  border-radius: 30px 0px;
+} */
+
+/*background and border color for each and every box*/
+.bg-dark {
+  background-color: rgb(24, 21, 49);
+}
+.red {
+  background-color: red;
+  border-color: red;
+}
+.purple {
+  background-color: purple;
+  border-color: purple;
+}
+.green {
+  background-color: green;
+  border-color: green;
+}
+.blue {
+  background-color: blue;
+  border-color: blue;
+}
+.pink {
+  background-color: pink;
+  border-color: pink;
+}
+.aqua {
+  background-color: aqua;
+  border-color: aqua;
+}
+.coral {
+  background-color: coral;
+  border-color: coral;
+}
+.crimson {
+  background-color: crimson;
+  border-color: crimson;
+}
+.darkgoldenrod {
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+.magenta {
+  background-color: magenta;
+  border-color: magenta;
+}
+.mediumseagreen {
+  background-color: mediumseagreen;
+  border-color: mediumseagreen;
+}
+.orchid {
+  background-color: orchid;
+  border-color: orchid;
+}
+/* =========================================================================================
+Create box layout: 6 columns | 3 columns | 2 columns -------------------------------------- */
+/* .Child Div_1 and .Child_Div_3 
+   6 columns layout - Calculating 100/6 = 16.66%
+   Considering ".box" class margin, padding and border-width each box width will be 15.35%
+*/
+.box_column-6 {
+  width: 15.35%;
+}
+
+/* .Child Div_2
+   3 columns layout - Calculating 100/3 = 33.33%
+   Considering ".box" class margin, padding and border-width each box width will be 32%
+*/
+.box_column-3 {
+  width: 32%;
+}
+
+/* .Child Div_4
+    2 columns layout - Calculating 100/2 = 50%
+    Considering ".box" class margin, padding and border-width each box width will be 48.8%
+*/
+.box_column-2 {
+  width: 48.8%;
+}

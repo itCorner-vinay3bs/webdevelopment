@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS - Anchor Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            /* background-color: linear-gradient(purple 0%, red 90%);
+            background-image: url("assets/images/seaside.jpg"), url("assets/images/nature.jpg"); 
+            background-repeat: repeat-x;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover; */
+
+            /* background-blend-mode: overlay; */
+
+            background: linear-gradient(purple 0%, red 90%),
+                linear-gradient(to right, purple 0%, yellow 90%),
+                url('assets/images/seaside.jpg'),
+                url('assets/images/nature.jpg');
+            background-blend-mode: multiply, color, lighten;
+            background-size: 100%;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .container {
+            margin: 0px auto;
+            background-color: #0000004d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container a {
+            text-decoration: none;
+            margin: 0px 2px 0px 0px;
+            padding: 15px 15px;
+            color: rgb(152, 162, 255);
+            font-weight: 400;
+            font-style: oblique 10deg;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: #0707314e;
+            border: 0px;
+            border-bottom: 2px solid #0707314e;
+            text-align: center;
+            transition: all 400ms ease-in-out;
+        }
+
+        .container a:hover,
+        .container a:focus {
+            color: #fff;
+            background-color: #6300ae63;
+            border-bottom: 2px solid #6200aebb;
+            outline: none;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .container a:visited {
+            font-weight: bold;
+        }
+
+        /* .imgContent {
+             height: 100vh; 
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="#">Gaurav</a>
+        <a href="#">Rupali</a>
+        <a href="#">Nikita</a>
+        <a href="#">Nandini</a>
+        <a href="#">Vinay</a>
+    </div>
+    <!-- <div class="imgContent">
+        <h1>Heading</h1>
+    </div> -->
+</body>
+
+</html>

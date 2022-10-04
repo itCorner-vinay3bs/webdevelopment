@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Document Formatting</title>
+</head>
+
+<!-- Basic structure of HTML -->
+
+<body>
+    <!-- Headings -->
+    <p>Heading:</p>
+    <h1>This is h1 tag</h1>
+    <h2>This is h2 tag</h2>
+    <h3>This is h3 tag</h3>
+    <h4>This is h4 tag</h4>
+    <h5>This is h5 tag</h5>
+    <h6>This is h6 tag</h6>
+    <hr>
+    <!-- Paragraph -->
+    <p>Paragraph</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Vel iure saepe aut voluptates, magni veritatis facilis?<br> <!-- <br> tag is used for line break -->
+        Repudiandae molestias reprehenderit quisquam dignissimos mollitia laboriosam iste nihil veritatis voluptates.
+        Ea, quisquam consectetur.</p>
+    <hr>
+    <!-- Ordered List -->
+    <p>Order List: </p>
+    <ol type="1">
+        <!-- You can use... type="A" | type="a" | type="i" -->
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+        <li>Ordered list item 3</li>
+        <li>Ordered list item 4</li>
+    </ol>
+    <hr>
+    <!-- Unordered List -->
+    <p>Unordered List: </p>
+    <ul type="disc">
+        <!-- You can use... type="disc" | type="circle" | type="square" -->
+        <li>Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+        <li>Unordered list item 3</li>
+        <li>Unordered list item 4</li>
+    </ul>
+    <hr>
+    <!-- Table -->
+    <p>Table:</p>
+    <table width="50%" cellpadding="15px" cellspacing="2px" border="1px" bgcolor="#f0f0f0">
+        <caption>ITCorner - 3b's 4-5 batch</caption>
+        <thead bgcolor="#c0c0c0">
+            <!--Table Header-->
+            <tr>
+                <!-- Table Row-->
+                <th>
+                    <!--Table Heading-->
+                    Id
+                </th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table Body-->
+            <tr bgcolor="#fefefe">
+                <td>
+                    <!-- Table data/cell -->
+                    1001
+                </td>
+                <td>Aryan</td>
+                <td>4512457755</td>
+                <td>Mumbai</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>
+                    <center>Nandini</center>
+                </td>
+                <td>6542154745</td>
+                <td>Banglore</td>
+            </tr>
+            <tr bgcolor="#fefefe">
+                <td>1003</td>
+                <td>Gaurav</td>
+                <td>9854575659</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>
+                    <center>Rupali</center>
+                </td>
+                <td>4512578469</td>
+                <td>Goa</td>
+            </tr>
+            <tr bgcolor="#fefefe">
+                <td>1005</td>
+                <td>Sukti</td>
+                <td>6945127496</td>
+                <td>Chennai</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Form -->
+    <p>Form:</p>
+    <form action="#" method="get" target="_self">
+        <p>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" />
+        </p>
+        <p>Select: </p>
+        <select id="mySelect" name="mySelect" style="width: 320px; height: 25px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select><br>
+        <p>Color: <input type="color" /></p>
+        <p>Date: <input type="date" /></p>
+        <p>Email: <input type="email" /></p>
+        <p>Password: <input type="password" autocomplete="true" /></p>
+
+        <p>Rideo button: </p>
+        <input type="radio" value="Male" name="gender" /> Male<br>
+        <input type="radio" value="Male" name="gender" /> Female<br>
+        <input type="radio" value="Male" name="gender" /> Other<br>
+        <p>Checkbox: </p>
+        <input type="checkbox" name="list_1">List 1<br>
+        <input type="checkbox" name="list_1">List 2<br>
+        <input type="checkbox" name="list_1">List 3<br><br>
+        <p>Comment:<textarea row="10" col="50">Comment...</textarea></p>
+        <!-- <button type="button" onclick="myFunction();">Submit</button> -->
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
